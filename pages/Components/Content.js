@@ -1,10 +1,36 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Box } from "@mui/system";
 import Main from './Main';
 import Navbar from './Navbar';
+import Player from './Player/Player';
+import { songsdata } from './Player/audio';
+import { useRef, useEffect } from 'react';
 
 
 function Content() {
+  const [songs, setSongs] = useState(songsdata);
+  const [isplaying, setisplaying] = useState(false);
+  const [currentSong, setCurrentSong] = useState(songsdata[1]);
+
+
+  const audioElem = useRef();
+
+  useEffect(() => {
+    if (isplaying) {
+      audioElem.current.play();
+    }
+    else {
+      audioElem.current.pause();
+    }
+  }, [isplaying])
+
+  const onPlaying = () => {
+    const duration = audioElem.current.duration;
+    const ct = audioElem.current.currentTime;
+
+    setCurrentSong({ ...currentSong, "progress": ct / duration * 100, "length": duration })
+
+  }
   return (
     <Box style={{backgroundColor:'black',width:'100%',height:'100%'}}>
 
@@ -126,8 +152,9 @@ function Content() {
   <Main/>
 </Box>
 </Box>
-<Box className='mediaplayer' style={{border:'1px solid white',height:'90px'}}>
-media player
+<Box className='mediaplayer' style={{height:'100px'}}>
+<audio src='https://beardbarnmusicbucket.s3.amazonaws.com/The+Wild+Horse' ref={audioElem}/>
+<Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} currentSong={currentSong} setCurrentSong={setCurrentSong}/>
   </Box>
 </Box>
   )
