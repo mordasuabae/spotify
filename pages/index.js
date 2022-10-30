@@ -9,7 +9,7 @@ import Login from './Components/Login'
 
 export default function Home() {
   return (
-    <Box>
+    <Box style={{height:'900px'}}>
       {/* <Login/> */}
     <Content/>
     </Box>

@@ -55,10 +55,12 @@ const Player = ({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
     
   }
 
+  
+
   return (
-    <div className='player_container'>
-      <div style={{margin:'5px 0 0 0'}} className="title">
-        {/* <p>{currentSong.title}</p> */}
+    <div  className='player_container'>
+      <div  className="title">
+        <p>{currentSong.title}</p>
       </div>
      
       <div className="controls">
