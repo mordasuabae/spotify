@@ -2,7 +2,9 @@ import React from 'react'
 import { Box } from "@mui/system";
 
 function LNavbar() {
-  const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=e195e4a1327d41f7bdefdf4faf08ff74&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state"
+  // "https://accounts.spotify.com/authorize?client_id=8b945ef10ea24755b83ac50cede405a0&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
+  // 
+  const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=8b945ef10ea24755b83ac50cede405a0&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
   return (
     <Box style={{padding:'17px 31px',height:'64px',display:'flex'}}>
 <button style={{borderRadius:'10px',background:"black",color:"white",border:'none'}} data-testid="top-bar-back-button" aria-label="Go back" disabled="" class="ql0zZd7giPXSnPg75NR0"><svg role="img" height="24" width="24" fill='white' class="Svg-ytk21e-0 dUrrjJ IYDlXmBmmUKHveMzIPCF" viewBox="0 0 24 24"><path d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z"></path></svg></button>
