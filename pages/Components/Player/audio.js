@@ -10,6 +10,10 @@ exports.songsdata = [
     {
         "title": "Travis Scott - Stop trina be God",
         "url": "https://beardbarnmusicbucket.s3.amazonaws.com/The+Wild+Horse"
+    },
+    {
+        "title": "Drake - PassionFruit",
+        "url": "https://open.spotify.com/track/5mCPDVBb16L4XQwDdbRUpz?si=b050307726224bc2"
     }
 ]
 
