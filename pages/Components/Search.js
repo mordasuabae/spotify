@@ -1,10 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Box } from "@mui/system";
 import LNavbar from './LNavbar';
 import LMain from './LMain';
-
+import { Typography } from "@mui/material";
+import {BsFillPlayCircleFill, BsFillPauseCircleFill, BsFillSkipStartCircleFill, BsSkipEndCircleFill, BsFillSkipEndCircleFill} from 'react-icons/bs';
 
 function Search() {
+  const [button, setButton] = useState(false);
+
+function 
+handleMouseEnter(e) {
+  setButton(true);
+}
+
+function
+handleMouseLeave() {
+  setButton(false);
+}
   return (
     <Box style={{backgroundColor:'black',width:'100%',height:'950px'}}>
 
@@ -81,7 +93,150 @@ Privacy
 <Box style={{color:'white',border:'1px solid white',width:'82%'}}>
   {/* Main Content */}
   <LNavbar/>
-  <LMain/>
+  <Box className='main' style={{border:'1px solid white',height:'507px',padding:'31px 31px'}}>
+    <b className='Headers'>Browse All </b>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+      <Box style={{display:'flex'}}>
+   <Box  style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'20px 0 0 0',padding:'0 16px'}}>
+   
+
+   </Box>
+    </Box>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box   style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'20px 0 0 0',padding:'0 16px'}}>
+ 
+
+   </Box>
+    </Box>  
+    <Box style={{display:'flex'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'20px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box   style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'20px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>  
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'20px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+      </Box>
+    
+    <br/>
+    <br/>
+
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+      <Box style={{display:'flex'}}>
+   <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>  
+    <Box style={{display:'flex'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>  
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+      </Box>
+    <br/>
+    <br/>
+
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+      <Box style={{display:'flex'}}>
+   <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>  
+    <Box style={{display:'flex'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>  
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+      </Box>
+    <br/>
+    <br/>
+
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+      <Box style={{display:'flex'}}>
+   <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>  
+    <Box style={{display:'flex'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>  
+    <Box style={{display:'flex',justifyContent:'space-between'}}>
+    <Box style={{border:'1px solid white',width:'195px',display:'flex',height:'195px',borderRadius:'10px',margin:'-10px 0 0 0',padding:'0 16px'}}>
+   
+   
+   </Box>
+    </Box>
+      </Box>
+    <br/>
+    <br/>
+
+    </Box>
 </Box>
 </Box>
 <Box className='cookies' style={{height:'70px',}}>
