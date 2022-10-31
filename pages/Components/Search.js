@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 
 function Search() {
   return (
-    <Box>Search</Box>
+    <Box style={{color:'white'}}>Search</Box>
   )
 }
 
