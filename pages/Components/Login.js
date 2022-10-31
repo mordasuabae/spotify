@@ -5,7 +5,7 @@ import LNavbar from './LNavbar';
 import LMain from './LMain';
 
 function Login() {
-  const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state"
+
   return (
 //     <Box style={{backgroundColor:'black',width:'100%'}}>
 // <Box style={{color:'white',border:'1px solid white',height:'50px'}}>
